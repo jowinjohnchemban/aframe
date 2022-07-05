@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A-FRAME | Desert House near Oasis">
+    <title>A-FRAME | Desert House near Oasis</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="desert" src="/assets/desert/desert.gltf"></a-asset-item>
+        <a-asset-item id="house" src="/assets/house/house.gltf"></a-asset-item>
+      </a-assets>
+        <a-sky color="#87CEEB"></a-sky>
+        <a-entity gltf-model="#desert"></a-entity>
+        <a-entity scale="1 1 1" position="-1 0 -1" gltf-model="#house"></a-entity>
+        <a-entity camera look-controls position="-5 2 5"></a-entity>
+    </a-scene>
+  </body>
+</html>
